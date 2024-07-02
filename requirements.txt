@@ -1,0 +1,4 @@
+jsonschema~=4.22.0
+SQLAlchemy~=2.0.30
+werkzeug~=3.0.3
+flask~=3.0.3
