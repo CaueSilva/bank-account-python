@@ -29,6 +29,13 @@ This project was developed using [Python 3.9](https://www.python.org/downloads/r
    4. [Get Transaction by ID](#get-transaction-by-id)
    5. [List All Transactions](#list-all-transactions)
 
+## ▶️ Getting Started
+
+1. [Prerequisites](#prerequisites)
+2. [Installation](#installation)
+3. [Usage](#usage)
+4. [Running Unit Tests](#running-unit-tests)
+
 ## 👥Holders
 
 Endpoints to create, update and list Holders.
@@ -748,3 +755,90 @@ Query parameters:
   }
 }
 ```
+### Getting Started
+
+## Prerequisites
+
+- Install Python
+
+    - Windows/macOS/Linux
+        - [Manual](https://www.python.org/downloads/release/python-390/)
+    - MacOS/Linux
+        - [Homebrew](https://docs.brew.sh/Installation)
+          
+          `brew install python`
+          
+    - Linux
+        - Via terminal
+          
+          `sudo apt-get install python3`
+
+
+- Install Postgres
+    - Windows/macOS/Linux
+        - [Manual](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
+
+
+- Install pgAdmin 4
+    - Windows/MacOS
+        - [Manual](https://www.postgresql.org/ftp/pgadmin/pgadmin4/v7.8/)
+    - Linux
+        - [Execute the statements listed in the link](https://www.pgadmin.org/download/pgadmin-4-rpm/)
+
+
+- Install Postman
+    - Windows/macOS/Linux
+        - [Manual](https://www.postman.com/downloads/) 
+
+## Installation
+
+- Create the local virtual environment for python:
+    - Windows/macOS/Linux/WSL
+      
+      `python3 -m venv ./venv`
+      
+
+- Activate the newly created virtual environment:
+    - Windows
+      
+      `./venv/Scripts/activate.bat`
+      
+    - macOS/Linux/WSL
+      
+      `. venv/bin/activate`
+      
+
+- Run the following to install project dependencies:
+    - Windows/macOS/Linux/WSL
+      
+      `pip install -r requirements.txt`
+      
+      
+- Run the following to install Pytest:
+    - Windows/macOS/Linux/WSL:
+      
+      `pip install pytest`
+      
+      
+- Run the following to install dotenv:
+    - Windows/macOS/Linux/WSL:
+      
+      `pip install python-dotenv`
+
+
+- Copy the Scripts from the /scripts folder and run into the pgAdmin to create the Database, Schemas and Tables
+      
+## Usage
+
+- Run the following command to run the App:
+  
+  `dotenv run -- python app.py`
+
+
+- Open Postman to create the intended request, following this documentation. Pay attention to the logged localhost port when running the step above.
+
+## Running Unit Tests
+
+- To run the Unity Tests of this project, run the command bellow:
+  
+  `pytest .\tests\.`
